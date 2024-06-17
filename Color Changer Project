@@ -1,0 +1,36 @@
+
+// This is a pure Javascript code i am not writing html and css code to save my time coz HTML and CSS are already done by me
+console.log('Dishant');
+// console.log("Dishant");
+
+const buttons = document.querySelectorAll('.button');
+
+const bodyy = document.querySelector('body');
+
+// console.log(buttons);
+
+buttons.forEach(function(button) {
+  // console.log(button);
+  button.addEventListener('click' , function(e){
+    // console.log(e);
+    console.log(e.target);
+    if(e.target.id === 'grey') {
+      bodyy.style.backgroundColor = 'grey';
+    }
+    else if(e.target.id === 'white') {
+      bodyy.style.backgroundColor = 'white';
+    }
+
+    else if(e.target.id === 'blue') {
+      bodyy.style.backgroundColor = 'blue';
+    }
+
+    // if(e.target.id === 'yellow')
+    else {
+      bodyy.style.backgroundColor = 'yellow';
+    }
+  
+  })
+});
+
+
